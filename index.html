@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J. Nitheeshwaran | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.7;
+        }
+
+        header {
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: 1px solid #334155;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: white;
+        }
+
+        .hero h2 {
+            color: #38bdf8;
+            margin: 10px 0;
+        }
+
+        .hero p, .about p {
+            max-width: 700px;
+            color: #cbd5e1;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #0284c7;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .section-title {
+            font-size: 30px;
+            margin-bottom: 25px;
+            color: #38bdf8;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .card h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #1e293b;
+            border: 1px solid #334155;
+            padding: 8px 15px;
+            margin: 7px;
+            border-radius: 20px;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            header {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Nitheeshwaran</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <p>WELCOME TO MY PORTFOLIO</p>
+    <h1>Hi, I'm J. Nitheeshwaran</h1>
+    <h2>Computer Science Engineering Student</h2>
+    <p>
+        Interested in software development, emerging technologies,
+        artificial intelligence and building practical solutions
+        through technology.
+    </p>
+    <a class="button" href="#projects">Explore My Projects</a>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        I am a Computer Science Engineering student at Sri Krishna
+        College of Engineering and Technology. I am continuously
+        developing my technical skills through projects, courses,
+        hackathons and hands-on learning. I enjoy exploring new
+        technologies and working on ideas that solve practical problems.
+    </p>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>eSim ToolGuard</h3>
+            <p>
+                Environment Health and Safe Setup Manager designed
+                to detect external tools, check versions, generate
+                dependency health reports and support safe installation.
+            </p>
+            <p><strong>Python | Automation | System Tools</strong></p>
+            <p>Developed as part of the FOSSEE Winter Internship 2026 Task.</p>
+        </div>
+
+        <div class="card">
+            <h3>Adaptive Ventilation Intelligence System</h3>
+            <p>
+                An adaptive ventilation concept designed to monitor
+                environmental conditions and control ventilation
+                based on temperature and humidity.
+            </p>
+            <p><strong>IoT | Sensors | Automation</strong></p>
+        </div>
+
+        <div class="card">
+            <h3>Healthcare Hackathon Project</h3>
+            <p>
+                Participated in a healthcare-focused hackathon
+                developing technology-oriented ideas to address
+                practical challenges in healthcare.
+            </p>
+            <p><strong>Healthcare | Problem Solving | Teamwork</strong></p>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>C</span>
+        <span>C++</span>
+        <span>Java</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>SQL</span>
+        <span>Artificial Intelligence</span>
+        <span>Prompt Engineering</span>
+    </div>
+</section>
+
+<section id="achievements">
+    <h2 class="section-title">Certifications & Achievements</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>GDTA Hackathon 2026</h3>
+            <p>First Prize Winner</p>
+        </div>
+
+        <div class="card">
+            <h3>SWAYAM Plus – AI for Aspiring Engineers</h3>
+            <p>IITM Pravartak Technologies Foundation</p>
+        </div>
+
+        <div class="card">
+            <h3>Google Prompting Essentials</h3>
+            <p>Google – Coursera</p>
+        </div>
+
+        <div class="card">
+            <h3>Oracle Database Foundation</h3>
+            <p>Database fundamentals and foundational learning.</p>
+        </div>
+
+        <div class="card">
+            <h3>Generative AI for All</h3>
+            <p>Infosys Springboard</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Connect With Me</h2>
+    <p>Explore my profiles and connect with me.</p>
+    <p>
+        GitHub:
+        <a href="https://github.com/" target="_blank">My GitHub Profile</a>
+    </p>
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/" target="_blank">My LinkedIn Profile</a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 J. Nitheeshwaran | Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
